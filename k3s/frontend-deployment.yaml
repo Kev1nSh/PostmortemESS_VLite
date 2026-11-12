@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postmortem-frontend
+  namespace: postmortemess
+spec:
+  revisionHistoryLimit: 2
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: postmortem-frontend
+  template:
+    metadata:
+      labels:
+        app: postmortem-frontend
+    spec:
+      containers:
+        - name: postmortem-frontend
+          image: ***
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80

@@ -1,0 +1,41 @@
+# Environment
+.env
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Python build
+dist/
+build/
+
+# Node / frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# pnpm
+.pnpm-store/
+
+# Test data
+tests/samples/
+
+# Local data
+postmortem.db
+data/postmortem.db
+
+# Archives / images
+*.tar
+
+# Local container image
+api-image.tar
+
+# OS
+.DS_Store
+Thumbs.db

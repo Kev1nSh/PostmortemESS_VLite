@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2026 Kevin S. H
+Copyright (c) 2026 Filip Andersson
+Copyright (c) 2026 Kevin Shocosh Gonzales
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

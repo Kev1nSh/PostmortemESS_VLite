@@ -1,0 +1,4 @@
+compoundfiles
+compressed-rtf
+rtfparse # Python 3.9+ only
+beautifulsoup4

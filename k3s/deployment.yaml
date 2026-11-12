@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postmortem-api
+  namespace: postmortemess
+spec:
+  revisionHistoryLimit: 2
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: postmortem-api
+  template:
+    metadata:
+      labels:
+        app: postmortem-api
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
+      volumes:
+        - name: db-storage
+          persistentVolumeClaim:
+            claimName: postmortem-db-pvc
+      containers:
+        - name: postmortem-api
+          image: ***
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+          env:
+            - name: VIRUSTOTAL_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: virustotal-api
+                  key: virustotal-api-key
+            - name: GOOGLE_SAFE_BROWSING_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: google-api
+                  key: google-api-key
+            - name: ABUSEIPDB_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: abuseipdb-api
+                  key: abuseipdb-api-key
+            - name: ABUSE_CH_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: abusech-api
+                  key: abusech-api-key
+            - name: HASH_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: hmac
+                  key: hmac-decode
+            - name: OPENLOOKUP_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: openlookup-api
+                  key: openlookup-api-key
+          volumeMounts:
+            - name: db-storage
+              mountPath: /data

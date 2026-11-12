@@ -1,0 +1,91 @@
+.statistics {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+}
+
+.statistics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.statistics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.period-selector {
+  padding: 0.7rem 1rem;
+  border: 1px solid #777;
+  border-radius: 4px;
+  background: white;
+  font-size: 1rem;
+}
+
+.statistics-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Native card used by statistics.jsx */
+.statistics-card {
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  color: #b00020;
+}
+
+@media (max-width: 900px) {
+  .statistics-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statistics-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .statistics-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Automatic dark mode for the statistics page */
+.theme-root.dark-mode .statistics {
+  background-color: #121820;
+  color: #edf2f7;
+}
+
+.theme-root.dark-mode .statistics .period-selector {
+  background-color: #1e2935;
+  color: #edf2f7;
+  border-color: #526171;
+  color-scheme: dark;
+}
+
+.theme-root.dark-mode .statistics .error-message {
+  color: #ff8a8a;
+}
+
+.theme-root.dark-mode .statistics .report-card {
+  background-color: #1e2935;
+  color: #edf2f7;
+  border-color: #394858;
+}
+
+.theme-root.dark-mode .statistics .report-card p,
+.theme-root.dark-mode .statistics .report-card h3 {
+  color: #edf2f7;
+}
