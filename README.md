@@ -14,11 +14,17 @@ The application can be run locally using either **Docker** or **Podman**.
 
 PostmortemESS VLite is the **Lite** version of the development work carried out during my LIA placement at **SMHI**.
 
-The project evolved from the existing PostmortemCLI email-analysis tool into a broader web-based security analysis platform. During the development, the work has involved multiple areas of IT, including:
+A special thanks to **everyone at SMHI**, especially the people within the **IT department**, whom I have had the opportunity to interact with during my LIA placement.
+
+I am very grateful to **SMHI** and **[Rafael Urrutia Silva](https://github.com/rafaelurrutiasilva)** for the opportunity to work on the project and to develop my skills within IT and cybersecurity during my LIA.
+
+The project evolved from the existing **[PostmortemCLI](https://github.com/Filipanderssondev/PostmortemCLI-email-security-analyzer)** email-analysis tool into a broader web-based security analysis platform. **[Filip Andersson](https://github.com/Filipanderssondev)**, the creator of PostmortemCLI, laid the foundation for the project and made it possible to build further on the existing solution.
+
+During the development, the work has involved multiple areas of IT, including:
 
 - Cybersecurity and email security
 - Application architecture
-- Python, API development with FastAPI
+- Python and API development with FastAPI
 - React/Vite frontend development
 - Containerization with Docker/Podman
 - Software development
@@ -635,11 +641,19 @@ VLite therefore preserves the central email-analysis workflow while removing inf
 
 # Acknowledgments
 
-A special thanks to [Filip Andersson](https://github.com/Filipanderssondev) for developing [PostmortemCLI](https://github.com/Filipanderssondev/PostmortemCLI-email-security-analyzer), which provides the foundation for the email-analysis functionality used by PostmortemESS.
+A special thanks to **everyone at SMHI**, especially the people within the **IT department**, whom I have had the opportunity to interact with during my LIA placement.
 
-A special thanks to [JoshData](https://github.com/JoshData) for developing [convert-outlook-msg-file](https://github.com/JoshData/convert-outlook-msg-file), which supports the conversion of Microsoft Outlook `.msg` files into `.eml` before they enter the established email-analysis pipeline.
+I am especially grateful to everyone who has helped me in different ways, answered my questions, shared their knowledge, provided advice or guidance, offered feedback, or simply taken the time to discuss ideas and experiences with me throughout the project. Every interaction, whether it was a technical discussion, a quick tip, a piece of advice, or a conversation about the work, has contributed to my learning and development during my time at SMHI.
 
-These projects provide important building blocks that allow PostmortemESS VLite to focus on email analysis, centralized processing, reporting and usability while keeping the local deployment lightweight.
+I greatly appreciate the welcoming environment and the willingness of the people around me to share their knowledge and experience. All of these interactions have made my time at SMHI both valuable and enjoyable.
+
+A special thanks to **[Rafael Urrutia Silva](https://github.com/rafaelurrutiasilva)** for believing in me and giving me the opportunity to work on the project and to develop my skills within IT and cybersecurity during my LIA.
+
+A special thanks to **[Filip Andersson](https://github.com/Filipanderssondev)**, the creator of **[PostmortemCLI](https://github.com/Filipanderssondev/PostmortemCLI-email-security-analyzer)**, which provided the foundation for the email-analysis functionality used by PostmortemESS and made it possible to build further on the solution.
+
+A special thanks to **[JoshData](https://github.com/JoshData)** for developing **[convert-outlook-msg-file](https://github.com/JoshData/convert-outlook-msg-file)**, which supports the conversion of Microsoft Outlook `.msg` files into `.eml` before they enter the established email-analysis pipeline.
+
+These projects, together with the support, guidance, and knowledge shared by the people around me at SMHI, have provided important building blocks for the development of PostmortemESS VLite.
 
 ---
 
