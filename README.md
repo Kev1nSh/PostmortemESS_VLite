@@ -647,9 +647,13 @@ I am especially grateful to everyone who has helped me in different ways, answer
 
 I greatly appreciate the welcoming environment and the willingness of the people around me to share their knowledge and experience. All of these interactions have made my time at SMHI both valuable and enjoyable.
 
+A special thanks to **Patrik Gånge** for being my supervisor throughout my LIA/Internship and for always being available to answer my questions, provide guidance, and help me find the right direction when facing challenges during the project. His support and guidance have been greatly appreciated throughout my time at SMHI.
+
 A special thanks to **[Rafael Urrutia Silva](https://github.com/rafaelurrutiasilva)** for believing in me and giving me the opportunity to work on the project and to develop my skills within IT and cybersecurity during my LIA.
 
 A special thanks to **[Filip Andersson](https://github.com/Filipanderssondev)**, the creator of **[PostmortemCLI](https://github.com/Filipanderssondev/PostmortemCLI-email-security-analyzer)**, which provided the foundation for the email-analysis functionality used by PostmortemESS and made it possible to build further on the solution.
+
+A special thanks to **Isak Stöt** for the valuable suggestion to visually present the reasons behind each verdict. This idea helped improve how the analysis results are communicated and makes it easier for users to understand why a particular verdict was given.
 
 A special thanks to **[JoshData](https://github.com/JoshData)** for developing **[convert-outlook-msg-file](https://github.com/JoshData/convert-outlook-msg-file)**, which supports the conversion of Microsoft Outlook `.msg` files into `.eml` before they enter the established email-analysis pipeline.
 
